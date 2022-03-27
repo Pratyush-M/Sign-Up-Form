@@ -1,3 +1,25 @@
-body {
-    background-color: goldenrod;
+* {
+    box-sizing: border-box;
 }
+
+
+.gridContainer {
+    margin: 3vh 5vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    
+
+
+}
+
+.imgContainer {
+    width: 300px;
+    height: 94vh;
+    background: url(/assets/background.jpg);
+    background-size:cover;
+    grid-row: span 3;
+    align-self: stretch;
+}
+
+
