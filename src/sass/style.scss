@@ -1,12 +1,16 @@
 * {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     box-sizing: border-box;
 }
 
 
 .gridContainer {
+    background-color: rgb(220, 228, 228);
+    border-radius: 20px;
+    overflow: hidden;
     margin: 3vh 5vw;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 320px 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     
 
@@ -16,10 +20,47 @@
 .imgContainer {
     width: 300px;
     height: 94vh;
-    background: url(/assets/background.jpg);
+    background: url(/assets/background3.jpg);
+    
     background-size:cover;
     grid-row: span 3;
     align-self: stretch;
+    align-items: center;
+}
+
+.formContainer {
+   
+    background-color: rgb(243, 235, 225);
+    box-shadow: 5px 1px 3px rgb(143, 136, 136);
+    padding: 5px;
+    height: 200px;
+
+    .liContainer {
+        list-style:none;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        height:150px;
+    }
+
+    li {
+        width: 50%;
+    }
+
+    input {
+        border-radius: 3px;
+        border: 1px solid gray;
+    }
+
+    label {
+        display: block;
+        padding: 0px;
+    }
+
+}
+
+.formHeader {
+    align-self:flex-end;
 }
 
 
