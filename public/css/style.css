@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   box-sizing: border-box;
@@ -9,7 +10,7 @@
   overflow: hidden;
   margin: 3vh 5vw;
   display: grid;
-  grid-template-columns: 320px 1fr;
+  grid-template-columns: 300px 1fr;
   grid-template-rows: 1fr 1fr 1fr;
 }
 
@@ -22,14 +23,35 @@
   align-self: stretch;
   align-items: center;
 }
+.imgContainer p {
+  margin-top: 90vh;
+  color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  font-size: small;
+}
+.imgContainer p a {
+  color: #64c7f5;
+}
+
+.formHeader {
+  align-self: flex-end;
+  margin-left: 20px;
+  color: rgba(0, 0, 0, 0.733);
+}
 
 .formContainer {
   background-color: #f3ebe1;
   box-shadow: 5px 1px 3px #8f8888;
   padding: 5px;
-  height: 200px;
+  height: 210px;
+}
+.formContainer h4 {
+  margin-top: 15px;
+  margin-left: 20px;
+  color: #363636;
 }
 .formContainer .liContainer {
+  padding-left: 20px;
   list-style: none;
   display: flex;
   flex-direction: column;
@@ -42,12 +64,45 @@
 .formContainer input {
   border-radius: 3px;
   border: 1px solid gray;
+  margin-bottom: 5px;
+  height: 22px;
+}
+.formContainer span {
+  position: relative;
+}
+.formContainer input:hover {
+  box-shadow: 1px 1px 3px rgba(20, 20, 20, 0.473);
+}
+.formContainer input:focus {
+  outline-color: #c7b136;
+}
+.formContainer input:invalid {
+  border: 1px solid red;
+}
+.formContainer input:invalid ~ span::after {
+  font-size: 0.55rem;
+  content: "❌";
+  position: absolute;
+  top: 4.5px;
+  left: 3px;
+}
+.formContainer input:valid ~ span::before {
+  font-size: 1.1rem;
+  content: "✓";
+  color: green;
+  position: absolute;
+  left: 2px;
+}
+.formContainer input:indeterminate ~ span::after {
+  content: "";
 }
 .formContainer label {
+  font-size: 0.9rem;
+  color: rgba(0, 0, 0, 0.712);
   display: block;
   padding: 0px;
 }
 
-.formHeader {
-  align-self: flex-end;
+.buttonContainer {
+  margin-left: 20px;
 }

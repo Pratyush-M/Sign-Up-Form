@@ -9,7 +9,9 @@
 </head>
 <body>
     <div class="gridContainer">
-    <div class="imgContainer"></div>
+    <div class="imgContainer">
+        <p>Photo by <a href="https://unsplash.com/@crease1?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Christopher Osten</a> on Unsplash</p>
+    </div>
     <div class="formHeader">
         <h2>EagleEye</h2>
         <h3>
@@ -19,14 +21,16 @@
 
     <div class="formContainer">
         <h4>Try putting in some info!</h4>
+        <form action="">
         <ul class="liContainer">
-        <li><label for="fname">First Name</label><input id="fname" type="text"></li>
-        <li><label for="lname">Last Name</label><input id="lname" type="text"></li>
-        <li><label for="phone">Phone Number</label><input id="phone" type="text"></li>
-        <li><label for="email">Email</label><input id="email" type="text"></li>
-        <li><label for="password">Password</label><input id="password" type="text"></li>
-        <li><label for="confpassword">Confirm Password</label><input id="confpassword" type="text"></li>
+        <li><label for="fname">First Name</label><input id="fname" type="text" required><span></span></li>
+        <li><label for="email">Email</label><input id="email" type="email" required><span></span></li>
+        <li><label for="password">Password</label><input id="password" type="password" required><span></span></li>
+        <li><label for="lname">Last Name</label><input id="lname" type="text" required><span></span></li>
+        <li><label for="phone">Phone Number</label><input id="phone" type="number" required><span></span></li>
+        <li><label for="confpassword">Confirm Password</label><input id="confpassword" type="text" required><span></span></li>
         </ul>
+    </form>
     </div>
 
     <div class="buttonContainer">
