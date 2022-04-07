@@ -21,6 +21,9 @@ $fontSize: 0.9rem;
 }
 
 .imgContainer {
+
+    
+    position: relative;
     width: 300px;
     height: 94vh;
     background: url(/assets/background3.jpg);
@@ -28,17 +31,22 @@ $fontSize: 0.9rem;
     grid-row: span 3;
     align-self: stretch;
     align-items: center;
+    
 
     p {
         margin-top: 90vh;
         color: rgba(255, 255, 255, 0.8);
         text-align:center;
         font-size: small;
+        
 
         a {
             color: rgb(100, 199, 245);
+           
         }
     }
+
+  
 }
 
 .formHeader {
@@ -115,6 +123,10 @@ $fontSize: 0.9rem;
 
     }
 
+    input:valid {
+        border: 1.5px solid green;
+    }
+
     input:indeterminate ~ span::after {
         content: '';
     }
@@ -130,6 +142,18 @@ $fontSize: 0.9rem;
 
 .buttonContainer {
     margin-left: 20px;
+
+    button {
+        background: rgb(59, 12, 12);  
+        border: 1px gray solid;
+        padding: 5.5px;
+        border-radius: 5px;
+        color: rgba(255, 255, 255, 0.801);
+    }
+
+    button:active {
+        background: rgb(110, 58, 58);
+    }
 }
 
 

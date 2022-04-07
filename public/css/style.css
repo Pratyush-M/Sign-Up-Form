@@ -15,6 +15,7 @@
 }
 
 .imgContainer {
+  position: relative;
   width: 300px;
   height: 94vh;
   background: url(/assets/background3.jpg);
@@ -93,6 +94,9 @@
   position: absolute;
   left: 2px;
 }
+.formContainer input:valid {
+  border: 1.5px solid green;
+}
 .formContainer input:indeterminate ~ span::after {
   content: "";
 }
@@ -105,4 +109,14 @@
 
 .buttonContainer {
   margin-left: 20px;
+}
+.buttonContainer button {
+  background: #3b0c0c;
+  border: 1px gray solid;
+  padding: 5.5px;
+  border-radius: 5px;
+  color: rgba(255, 255, 255, 0.801);
+}
+.buttonContainer button:active {
+  background: #6e3a3a;
 }
