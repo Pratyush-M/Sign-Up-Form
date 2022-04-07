@@ -9,34 +9,35 @@
 </head>
 <body>
     <div class="gridContainer">
-    <div class="imgContainer">
-        <p>Photo by <a href="https://unsplash.com/@crease1?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Christopher Osten</a> on Unsplash</p>
-    </div>
-    <div class="formHeader">
-        <h2>EagleEye</h2>
-        <h3>
-            We at EagleEye let no detail go unnoticed. Signup to experience the most wholesome form filling experience.
-        </h3>
-    </div>
+        <div class="imgContainer">
+            <p>Photo by <a href="https://unsplash.com/@crease1?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Christopher Osten</a> on Unsplash</p>
+            <div class="logo">test</div>
+        </div>
+        <div class="formHeader">
+            <h2>EagleEye</h2>
+            <h3>
+                We at EagleEye let no detail go unnoticed. Signup to experience the most wholesome form filling experience.
+            </h3>
+        </div>
 
-    <div class="formContainer">
-        <h4>Try putting in some info!</h4>
-        <form action="">
-        <ul class="liContainer">
-        <li><label for="fname">First Name</label><input id="fname" type="text" required><span></span></li>
-        <li><label for="email">Email</label><input id="email" type="email" required><span></span></li>
-        <li><label for="password">Password</label><input id="password" type="password" required><span></span></li>
-        <li><label for="lname">Last Name</label><input id="lname" type="text" required><span></span></li>
-        <li><label for="phone">Phone Number</label><input id="phone" type="number" required><span></span></li>
-        <li><label for="confpassword">Confirm Password</label><input id="confpassword" type="text" required><span></span></li>
-        </ul>
-    </form>
-    </div>
+        <div class="formContainer">
+            <h4>Try putting in some info!</h4>
+        <form id = "detailsForm" action="">
+            <ul class="liContainer">
+            <li><label for="fname">First Name</label><input id="fname" type="text" required><span></span></li>
+            <li><label for="email">Email</label><input id="email" type="email" required><span></span></li>
+            <li><label for="password">Password</label><input id="password" type="password" required><span></span></li>
+            <li><label for="lname">Last Name</label><input id="lname" type="text" required><span></span></li>
+            <li><label for="phone">Phone Number</label><input id="phone" type="number" required><span></span></li>
+            <li><label for="confpassword">Confirm Password</label><input id="confpassword" type="text" required><span></span></li>
+            </ul>
+        </form>
+        </div>
 
-    <div class="buttonContainer">
-        <button type="button">Create Account</button>
-        <p>Already have an account? Log in</p>
-    </div>
+        <div class="buttonContainer">
+            <button type="submit" form="detailsForm">Create Account</button>
+            <p>Already have an account? Log in</p>
+        </div>
     </div>
 </body>
 </html>
